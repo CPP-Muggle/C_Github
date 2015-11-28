@@ -1,0 +1,14 @@
+Similar to Exercise A, I made 3 functions global:
+
+PerpetualPut:Perpetual Put option pricing
+
+PerpetualCall:Perpetual Call option pricing
+
+MeshArray:creat Meshed Array
+
+And I created a class PAmerican Option which contains constructor/deconstructor 
+and necessary class member functions:
+
+PerPutOption: Calculate Perpetual Put Option given different stock price
+
+PerCallOption: Calculate Perpetual Call Option given different stock price

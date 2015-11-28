@@ -1,0 +1,40 @@
+My project is seperated into two main groups:
+
+First file (function) for global functions, which contains:
+
+CallOptionPrice:Calculate Call Option Pirce with all input parameters
+
+PutOptionPrice:Calculate Put Option Pirce with all input parameters
+
+MeshArray:creast Meshed Array
+
+DeltaCall:Calculate Delta Call Option Pirce with all input parameters
+
+DeltaPut:Calculate Delta Put Option Pirce with all input parameters
+
+Gamma:Calculate Gamma with all input parameters(same for Call&Put)
+
+I keep them as global function since later we need to call them in class member function
+to add in more parameters for computation
+
+Second file (EuroOption) is a class for European Option with parameters and Functions:
+
+CallOption:Calculate Call option price using class data
+
+PutOption:Calculate Put option price using class data
+
+CallPrice:Calculate Call option price with multiple input(Meshed Array of S,T or sig)
+
+PutPrice:Calculate Put option price with multiple input(Meshed Array of S,T or sig)
+
+Delta:Calculate Call delta price with Meshed Array of S
+
+CallDeltaApprox:approximate call delta price
+
+PutDeltaApprox:approximate put delta price
+
+CallGammaApprox:approximate call gamma price
+
+PutGammaApprox:approximate put gamma price
+
+I keep those functions in class since they only need 1 input other than class member data
